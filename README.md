@@ -37,4 +37,60 @@ Automated pipelines that run tests and deploy code changes efficiently, improvin
   Sets up and manages the infrastructure, CI/CD pipelines, containerization with Docker, deployment processes, and monitors system performance and scalability.
  🧪 QA Engineer
   Tests the backend APIs and features, writes automated test cases, reports bugs, and ensures the system meets quality and functionality standards before deployment.
-  
+
+🗄️ Database Design
+ 🧑 Users
+   `id`: Unique identifier for each user
+   `name`: Full name of the user
+   `email`: Email address (used for login)
+   `password`: Hashed password
+   `role`: Host or guest
+
+  Relations:
+- A user can own multiple properties
+- A user can make multiple bookings
+- A user can leave multiple reviews
+
+ 🏠 Properties
+  `id`: Unique identifier for each property
+  `title`: Name or title of the property
+  `description`: Details about the property
+  `location`: Address or coordinates
+  `owner_id`: Reference to the user (host)
+
+  Relations:
+- A property **belongs to a user (host)**
+- A property can **have many bookings and reviews**
+
+ 📅 Bookings
+  `id`: Unique identifier for each booking
+  `user_id`: Reference to the user who made the booking
+  `property_id`: Reference to the booked property
+  `check_in`: Start date of the booking
+  `check_out`: End date of the booking
+
+  Relations:
+- A booking belongs to one user and one property**
+- A booking can have one payment**
+
+ 💳 Payments
+  `id`: Unique payment transaction ID
+  `booking_id`: Reference to the related booking
+  `amount`: Payment amount
+  `status`: Payment status (e.g., success, pending)
+  `payment_date`: Date of the transaction
+
+Relations:
+- A payment is linked to one booking
+
+⭐ Reviews
+  `id`: Unique review ID
+  `user_id`: Reference to the reviewer
+  `property_id`: Reference to the reviewed property
+  `rating`: Numerical score
+  `comment`: Text feedback
+
+ Relations:
+  - A review belongs to a user and a property
+
+
