@@ -133,4 +133,20 @@ Here's the `Feature Breakdown` section for your `README.md` file:
    Fine-grained permissions will restrict data access (e.g., users can only edit their own data).
    Prevents unauthorized actions and enforces data ownership.
 
+## 🚀 CI/CD Pipeline
+
+**CI/CD (Continuous Integration and Continuous Deployment)** automates the process of testing, building, and deploying code changes. CI ensures that new code is automatically tested, while CD deploys approved changes to production quickly and reliably.
+
+### **Why It’s Important:**
+
+* Reduces manual errors in deployment
+* Speeds up development and delivery
+* Ensures consistent testing and quality assurance
+
+### **Tools Used:**
+
+* **GitHub Actions**: Automates testing and deployment workflows
+* **Docker**: Provides a consistent environment for building and deploying the app
+* **Docker Hub/GitHub Container Registry**: For storing and pulling container images
+
 
