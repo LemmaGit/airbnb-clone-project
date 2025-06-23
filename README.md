@@ -93,4 +93,22 @@ Relations:
  Relations:
   - A review belongs to a user and a property
 
+Here's the `Feature Breakdown` section for your `README.md` file:
+
+---
+
+🔍 Feature Breakdown
+
+ 👤 User Management
+   Allows users to register, log in, and manage their profiles securely. This feature ensures proper authentication and authorization, enabling a personalized experience for each user.
+ 🏠 Property Management
+   Hosts can create, update, view, and delete property listings. This feature enables them to showcase their accommodations with relevant details for potential guests.
+ 📅 Booking System
+   Users can book available properties by selecting check-in and check-out dates. It manages availability and prevents double bookings, forming the core interaction between guests and hosts.
+ 💳 Payment Processing
+   Handles payment transactions for bookings, recording payment status and details. This ensures secure and reliable processing of financial activities within the platform.
+ ⭐ Review System
+   Enables users to leave ratings and feedback on properties they’ve stayed at. It promotes trust and helps future guests make informed decisions.
+ ⚡ Performance Optimization
+   Implements database indexing and caching for fast data retrieval and efficient load handling. This ensures the backend performs well under real-world usage conditions.
 
