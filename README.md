@@ -99,16 +99,38 @@ Here's the `Feature Breakdown` section for your `README.md` file:
 
 🔍 Feature Breakdown
 
- 👤 User Management
+ -👤 User Management
    Allows users to register, log in, and manage their profiles securely. This feature ensures proper authentication and authorization, enabling a personalized experience for each user.
- 🏠 Property Management
+ -🏠 Property Management
    Hosts can create, update, view, and delete property listings. This feature enables them to showcase their accommodations with relevant details for potential guests.
- 📅 Booking System
+ -📅 Booking System
    Users can book available properties by selecting check-in and check-out dates. It manages availability and prevents double bookings, forming the core interaction between guests and hosts.
- 💳 Payment Processing
+ -💳 Payment Processing
    Handles payment transactions for bookings, recording payment status and details. This ensures secure and reliable processing of financial activities within the platform.
- ⭐ Review System
+ -⭐ Review System
    Enables users to leave ratings and feedback on properties they’ve stayed at. It promotes trust and helps future guests make informed decisions.
- ⚡ Performance Optimization
+ -⚡ Performance Optimization
    Implements database indexing and caching for fast data retrieval and efficient load handling. This ensures the backend performs well under real-world usage conditions.
+
+
+🔐 Security Measures
+ -🔑 Authentication & Authorization
+   Secure login and token-based authentication (e.g., JWT) will be used to verify users and control access.
+   Protects user accounts and ensures only authorized users can access or modify data (e.g., hosts managing their properties).
+ -🔒 Password Hashing
+   User passwords will be hashed using strong algorithms (e.g., bcrypt) before storage.
+   Prevents exposure of sensitive credentials in case of a data breach.
+ -📈 Rate Limiting
+   API endpoints will implement rate limiting to prevent abuse or brute-force attacks.
+   Protects the server from overload and enhances overall platform stability.
+ -💳 Payment Security
+   Payments will be processed through secure, PCI-compliant gateways (e.g., Stripe).
+   Ensures financial data is handled securely, building trust with users and reducing liability.
+ -🛡️ Data Validation & Sanitization
+   All inputs will be validated and sanitized to prevent SQL injection, XSS, and other attacks.
+   Ensures backend integrity and protects the application from malicious inputs.
+ -🔍 Access Controls**
+   Fine-grained permissions will restrict data access (e.g., users can only edit their own data).
+   Prevents unauthorized actions and enforces data ownership.
+
 
