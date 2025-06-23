@@ -113,7 +113,7 @@ Here's the `Feature Breakdown` section for your `README.md` file:
    Implements database indexing and caching for fast data retrieval and efficient load handling. This ensures the backend performs well under real-world usage conditions.
 
 
-🔐 Security Measures
+🔐 API Security
  -🔑 Authentication & Authorization
    Secure login and token-based authentication (e.g., JWT) will be used to verify users and control access.
    Protects user accounts and ensures only authorized users can access or modify data (e.g., hosts managing their properties).
